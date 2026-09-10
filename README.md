@@ -4,12 +4,11 @@
 [![npm](https://img.shields.io/npm/v/@wingtics/core.svg)](https://www.npmjs.com/package/@wingtics/core)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> Wingtics was called **Analytics Kit** until September 2026, and its packages
-> moved from `@analytics-kit/*` to `@wingtics/*` at 0.6.0. The old scope stays
-> on npm — deprecated with a pointer here, not removed — so nothing already
-> installed breaks. New versions only land under `@wingtics/*`.
-
 Provider-agnostic analytics for websites. You give users a **connector** for the analytics tool they already use, and **components** that render the data. Switching from Plausible to GA4 (or Vercel, Umami, PostHog) is a constructor change — the dashboard stays the same.
+
+![The same dashboard switching from Plausible to Vercel. The charts keep their styling, and the metric Vercel cannot answer says "Not supported" instead of showing a zero.](docs/media/wingtics-demo.gif)
+
+**[Live demo](https://wingtics.com)** · [Docs](https://wingtics.com/docs) · [Every component](https://wingtics.com/components)
 
 ```bash
 pnpm add @wingtics/react @wingtics/core @wingtics/connector-plausible
@@ -209,7 +208,7 @@ Live site: **https://wingtics.com**
 - Components — https://wingtics.com/components
 - Area chart — https://wingtics.com/components/area-chart
 
-The product site is the Next.js app at the repo root. The browser talks to `/api/analytics`; vendor keys stay on the server via `@wingtics/next`.
+The product site is the Next.js app at the repo root. The browser talks to `/api/v1/analytics`; vendor keys stay on the server via `@wingtics/next`.
 
 1. Import `educlopez/wingtics` in Vercel.
 2. Framework: **Next.js**. Root Directory: **empty** (repository root).
@@ -245,4 +244,8 @@ pnpm check   # lint, format, test, typecheck, build, publint
 
 CI runs that same gate on every pull request. Releases use [Changesets](https://github.com/changesets/changesets): merge to `main`, merge the Version Packages PR, and GitHub Actions publishes `@wingtics/*` to npm.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for first-time npm org setup (`NPM_TOKEN`) and how to add providers or widgets.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the npm trusted-publishing setup and how to add providers or widgets.
+
+## Renamed from Analytics Kit
+
+Wingtics was called **Analytics Kit** until September 2026, and its packages moved from `@analytics-kit/*` to `@wingtics/*` at 0.6.0. The old scope stays on npm — deprecated with a pointer here, not removed — so nothing already installed breaks. New versions only land under `@wingtics/*`.
