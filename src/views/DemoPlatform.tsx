@@ -208,7 +208,7 @@ export function DemoPlatform() {
       // Same arrangement the landing used: real data when the server has a
       // token, a labelled sample profile when it does not, so the demo is never
       // broken and never pretends.
-      const live = createHttpConnector({ endpoint: "/api/analytics" });
+      const live = createHttpConnector({ endpoint: "/api/v1/analytics" });
       const sample = createMockConnector({
         profile: "full",
         seed: 21,
