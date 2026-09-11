@@ -455,8 +455,8 @@ export function DocsPage() {
           </p>
           <CodeBlock code={HANDLER} lang="ts" title="route.ts" />
           <p className="text-paragraph-sm lg:text-paragraph-md text-text-sub-600 max-w-[70ch] [&_a]:text-primary-base [&_a]:hover:underline [&_code]:font-mono [&_code]:text-[0.86em]">
-            Browser: <code>createHttpConnector({`{ endpoint: "/api/v1/analytics" }`})</code>. This site
-            does that in <code>app/api/analytics/route.ts</code>. Also{" "}
+            Browser: <code>createHttpConnector({`{ endpoint: "/api/v1/analytics" }`})</code>. This
+            site does that in <code>app/api/analytics/route.ts</code>. Also{" "}
             <code>examples/next-app-route.ts</code>.
           </p>
         </section>
