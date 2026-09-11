@@ -112,7 +112,7 @@ function useCredentialedSeries({
   useEffect(() => {
     if (!enabled || (!range && !queryKind)) return;
     let cancelled = false;
-    const connector = createHttpConnector({ endpoint: "/api/analytics" });
+    const connector = createHttpConnector({ endpoint: "/api/v1/analytics" });
     const query =
       queryKind === "radial-time"
         ? buildRadialTimePreviewQuery(metric)

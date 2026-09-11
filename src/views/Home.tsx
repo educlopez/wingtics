@@ -20,7 +20,7 @@ const INSTALL = "pnpm add @wingtics/react @wingtics/core @wingtics/next @wingtic
 const SNIPPET = `import { AnalyticsProvider, Dashboard } from "@wingtics/react";
 import { createHttpConnector } from "@wingtics/core";
 
-const connector = createHttpConnector({ endpoint: "/api/analytics" });
+const connector = createHttpConnector({ endpoint: "/api/v1/analytics" });
 
 export function Stats() {
   return (

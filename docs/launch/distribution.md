@@ -14,9 +14,10 @@ formulario de envío: el contacto editorial que publican en cooperpress.com es
 
     editor@cooperpress.com
 
-**Bytes (bytes.dev)** — 100.000 devs, lo hace Fireship. **No acepta envíos.**
-Su web solo ofrece Archives y Advertise: la única vía es publicidad de pago.
-Descartado como canal gratuito.
+**Bytes (bytes.dev)** — 100.000 devs, lo hace Fireship. **No encontré ninguna
+vía pública de envío**: su web solo enlaza Archives y Advertise, y no publica
+política editorial. Eso no equivale a que rechacen propuestas — simplemente no
+hay un canal documentado, así que no cuenta como vía gratuita fiable.
 
 **Texto a enviar** (piden 1-2 frases, no un pitch):
 
