@@ -56,6 +56,7 @@ por newsletter.
 > why the query model looks the way it does.
 
 **Reglas que no son opcionales:**
+
 - Entre semana, mañana de la costa este (~9-11 ET).
 - Estar disponible varias horas seguidas. Es el requisito, no un consejo.
 - Responder a todo, incluso lo hostil, con calma y detalle.
@@ -81,8 +82,7 @@ acortado, y una pregunta real al final para que haya conversación.
 ## 4. Descartado, y por qué
 
 **awesome-react**: su sección de charts lista recharts (27.5k ★), visx (21k),
-xyflow (38.3k), nivo (14.1k), victory (11.2k), react-vis (8.8k). Wingtics tiene
-4. La PR se cierra y parece spam. Volver cuando haya tracción real.
+xyflow (38.3k), nivo (14.1k), victory (11.2k), react-vis (8.8k). Wingtics tiene 4. La PR se cierra y parece spam. Volver cuando haya tracción real.
 
 ---
 
