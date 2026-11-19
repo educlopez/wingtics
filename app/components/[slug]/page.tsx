@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CATALOG, catalogBySlug } from "../../../src/catalog/items";
+import { componentDescription, componentTitle } from "../../../src/catalog/seo";
 import { ComponentDetail } from "../../../src/views/ComponentDetail";
 
 export function generateStaticParams() {
@@ -16,13 +17,15 @@ export async function generateMetadata({
   const item = catalogBySlug(slug);
   if (!item) return { title: "Components" };
   const url = `/components/${item.slug}`;
+  const title = componentTitle(item);
+  const description = componentDescription(item);
   return {
-    title: item.title,
-    description: item.blurb,
+    title,
+    description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${item.title} — Wingtics`,
-      description: item.blurb,
+      title: `${title} — Wingtics`,
+      description,
       url,
     },
   };
