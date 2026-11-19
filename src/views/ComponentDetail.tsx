@@ -10,6 +10,7 @@ import { buildUsage, chartSlots, itemControls, themeVars } from "@/catalog/knobs
 import { useKnobDials } from "@/catalog/useKnobDials";
 import { useThemeDials } from "@/catalog/useThemeDials";
 import { PROP_DOCS } from "@/catalog/propDocs";
+import { componentLead } from "@/catalog/seo";
 import * as Badge from "@/components/ui/badge";
 import * as TabMenuHorizontal from "@/components/ui/tab-menu-horizontal";
 import { PropsTable } from "@/site/PropsTable";
@@ -61,7 +62,7 @@ export function ComponentDetail({ item }: { item: CatalogItem }) {
           {item.title}
         </h1>
         <p className="text-paragraph-sm lg:text-paragraph-md text-text-sub-600 mt-3 max-w-[70ch]">
-          {item.blurb}
+          {componentLead(item)} {item.blurb}
         </p>
       </header>
 
